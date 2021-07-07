@@ -20,8 +20,8 @@ export class AppComponent {
 
     let satellitesUrl = 'https://handlers.education.launchcode.org/static/satellites.json';
  
-    window.fetch(satellitesUrl).then(function(response) {
-       response.json().then(function(data) {
+    window.fetch(satellitesUrl).then((response: any) => {
+       response.json().then((data: any) => {
  
           let fetchedSatellites = data.satellites;
           for (let i=0; i<fetchedSatellites.length; i++){
@@ -29,10 +29,9 @@ export class AppComponent {
             this.sourceList.push(satellite);
             this.displayList = this.sourceList.slice(0);
           }  
-       }.bind(this));
-    }.bind(this));
- }
-
+       }
+       )})
+   }
  search(searchTerm: string): void {
   let matchingSatellites: Satellite[] = [];
   searchTerm = searchTerm.toLowerCase();
