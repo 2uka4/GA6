@@ -1,5 +1,3 @@
-// SATELLITE.SPEC.TS WAS CREATED ITSELF NO NEED TO CHANGE BUT GOT AN ERROR//
-
 import { Satellite } from './satellite';
 
 describe('Satellite', () => {

@@ -1,26 +1,25 @@
-.header-row {
-    background: #379392;
-    color: #FFE3DC;
+.sortable {
+    cursor: pointer;
+    color: #dd5;
 }
 
 .warning {
-    background-color: #EF3054;
-}
-
-.sortable {
-    cursor: pointer;
-    color: #CFFFE5;
+    background-color: #da8a8a;
 }
 
 table {
-  color: #EDE7D9;
+  color: #111;
   border-radius: 5px;
   overflow: hidden;
-  margin: 20px 0;
-  min-width: 500px;
-  background: #335C81;
+  margin: 12px 0;
+  min-width: 300px;
+  background: #dad8d8;
 }
 
+.header-row {
+    background: #34495E;
+    color: #fff
+}
 
 th, td {
     text-align: left;

@@ -1,10 +1,12 @@
-<!-- STEP 3 Pass in Satellites to Orbit List Component -->
+<app-orbit-list [satellites]="sourceList"></app-orbit-list>
+
+
+<div class="search-form">
+  Search: <input type="search" #searchTerm (keyup.enter)="search(searchTerm.value)" />
+  <button (click)="search(searchTerm.value)">Search</button>
+</div> 
 
 <app-orbit-list [satellites]="displayList"></app-orbit-list>
 
-
-<div class ="search-form">
-    <input #searchTerm type="text" (keyup.enter) = "search(searchTerm.value)">
-    <button (click) = "search(searchTerm.value)">Search</button>
-</div>
-
+<!-- <div ><input #searchTerm (keyup.enter)="search(searchTerm.value)"class="search-form">
+  <button (click)="search(searchTerm.value)">Search></button></div> -->
